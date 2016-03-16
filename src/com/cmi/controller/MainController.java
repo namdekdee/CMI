@@ -82,7 +82,7 @@ public class MainController {
 
 	@RequestMapping("/delete")
 	public String deleteUser(@RequestParam String id) {
-		//System.out.println("id = " + id);
+		System.out.println("id = " + id);
 //		tempVehicleService.deleteData(id);
 		return "redirect:/getList";
 	}
