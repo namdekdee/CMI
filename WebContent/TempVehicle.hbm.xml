@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.cmi.hibernate.TempVehicleEntity" table="tempvehical"
+		catalog="CMI">
+		<id name="vehicalCode" type="java.lang.Integer">
+			<column name="VehicalCode" />
+			<generator class="identity" />
+		</id>
+		<property name="make" type="string">
+			<column name="Make" length="50" not-null="true" unique="true" />
+		</property>
+		<property name="model" type="string">
+			<column name="Model" length="50" not-null="true" unique="true" />
+		</property>
+		<property name="manufactureYear" type="string">
+			<column name="ManufactureYear" length="50" not-null="true"
+				unique="true" />
+		</property>
+		<property name="modelDescription" type="string">
+			<column name="ModelDescription" length="50" not-null="true"
+				unique="true" />
+		</property>
+		<property name="bodyType" type="string">
+			<column name="BodyType" length="50" not-null="true" unique="true" />
+		</property>
+		<property name="subbodyType" type="string">
+			<column name="SubbodyType" length="50" not-null="true" unique="true" />
+		</property>
+		<property name="usage" type="string">
+			<column name="Usage" length="50" not-null="true" unique="true" />
+		</property>
+		<property name="seatNumber" type="string">
+			<column name="SeatNumber" length="50" not-null="true" unique="true" />
+		</property>
+
+	</class>
+</hibernate-mapping>
